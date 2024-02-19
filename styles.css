@@ -2,10 +2,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    overflow-x: hidden;
   }
 
   main {
-    padding: 20px;
     transition: margin-left .5s;
   }
   
@@ -68,10 +68,8 @@ body {
   
   .content {
     flex-grow: 1;
-    padding: 20px;
     transition: margin-left 0.5s ease;
-    margin-left: 90px; /* Adjust margin to accommodate expanded sidebar */
-    }
+  }
 
   .full-section {
     width: 100vw;
@@ -80,7 +78,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    }
+    border-bottom: 1px solid #ccc;
+  }
+
+  .full-section:last-child {
+    border-bottom: none; /* Remove bottom border from the last section */
+  }
   
   #toggleButton {
     display: block;
@@ -98,4 +101,54 @@ body {
   #toggleButton:hover {
     background-color: #555; /* Darken color on hover */
   }
+
+  /*Home section*/
+  #home {
+    background-image: url('images/HomePhoto.jpg'); /* Replace 'home-background.jpg' with the path to your image */
+    background-size: cover; /* Cover the entire section with the background image */
+    background-position: center; /* Center the background image */
+    color: black; /* Set text color to white for better contrast */
+    padding: 50px; /* Add padding to the section content */
+    text-align: center; /* Center text horizontally */
+  }
   
+  #home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #777;
+  }
+
+  /*About me section*/
+  .about-content {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    gap: 20px; /* Add some space between text and image */
+    padding-left: 40px; /* Add left padding to move the section to the left */
+  }
+  
+  .about-text {
+    max-width: 600px; /* Limit width of text content */
+  }
+  
+  .about-image img {
+    border-radius: 50%; /* Make image round */
+  }

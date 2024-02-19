@@ -9,14 +9,14 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     if (sidebar.classList.contains('expanded')) {
       // Expand sidebar
       sidebar.style.width = '150px';
-      content.style.marginLeft = '200px';
+      content.style.marginLeft = '40px';
       // Change icon to "fa-angles-left" when sidebar is expanded
       icon.classList.remove('fa-angles-right');
       icon.classList.add('fa-angles-left');
     } else {
       // Collapse sidebar
       sidebar.style.width = '40px';
-      content.style.marginLeft = '90px';
+      content.style.marginLeft = '0px';
       // Change icon to "fa-angles-right" when sidebar is collapsed
       icon.classList.remove('fa-angles-left');
       icon.classList.add('fa-angles-right');
