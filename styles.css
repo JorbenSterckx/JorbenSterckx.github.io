@@ -148,7 +148,101 @@ body {
   .about-text {
     max-width: 600px; /* Limit width of text content */
   }
+
+  .about-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+  }
   
   .about-image img {
     border-radius: 50%; /* Make image round */
+    max-width: 100%; /* Ensure image doesn't overflow its container */
   }
+
+  /* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text horizontally */
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .about-image {
+    margin-bottom: 20px; /* Add space between image and text */
+  }
+
+  .container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .sidebar {
+    width: 100%; /* Occupy full width */
+    height: 40px; /* Auto height */
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left */
+    padding: 20px 0; /* Adjust padding */
+    box-shadow: none; /* Remove box shadow */
+    z-index: 1000; /* Set higher z-index */
+    background-color: #333; /* Background color */
+    transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for width and height */
+  }
+
+  .navbar-list li {
+    opacity: 0; /* Initially hide the navbar items */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    transform: translateY(-20px); /* Start with items slightly off-screen */
+  }
+
+  .sidebar.expanded {
+    height: auto; /* Auto height when expanded */
+  }
+
+  .sidebar.expanded .navbar-list {
+    text-align: center;
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .sidebar.expanded .navbar-list li {
+    opacity: 1; /* Hide navbar items when collapsed */
+    transform: translateY(-20px); /* Move items slightly off-screen when collapsed */
+    margin-top: 40px;
+  }
+
+  .sidebar.expanded .navbar-list li a {
+    padding: 10px 60px;
+  }
+
+  .sidebar:not(.expanded) .navbar-list {
+    text-align: center;
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .sidebar:not(.expanded) .navbar-list li {
+    opacity: 1; /* Hide navbar items when collapsed */
+    transform: translateY(-20px); /* Move items slightly off-screen when collapsed */
+    margin-top: 40px;
+  }
+
+  .content {
+    margin-top: 60px; /* Adjust margin to accommodate expanded navbar */
+  }
+
+  #toggleButton {
+    margin: 0 auto; /* Center the toggle button */
+    display: block; /* Ensure button is block-level */
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    color: #fff; /* Button color */
+    font-size: 18px; /* Button font size */
+    cursor: pointer; /* Cursor style */
+    padding: 10px; /* Button padding */
+    text-align: center; /* Center text */
+  }
+}
