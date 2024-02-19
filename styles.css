@@ -110,6 +110,7 @@ body {
     color: black; /* Set text color to white for better contrast */
     padding: 50px; /* Add padding to the section content */
     text-align: center; /* Center text horizontally */
+    background-attachment: fixed; /* Fix the background image while scrolling */
   }
   
   #home h1 {
@@ -157,6 +158,24 @@ body {
     border-radius: 50%; /* Make image round */
     max-width: 100%; /* Ensure image doesn't overflow its container */
   }
+
+  .buttons {
+    margin-top: 20px;
+ }
+
+ .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+ }
+
+ .btn:hover {
+    background-color: #777;
+ }
 
   /* Media Query for smaller screens */
 @media screen and (max-width: 768px) {
