@@ -25,3 +25,16 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
+function showPopup(popupId) {
+    document.getElementById(popupId + "Popup").style.display = "block";
+}
+  
+function hidePopup(popupId) {
+    document.getElementById(popupId + "Popup").style.display = "none";
+}
+
+function showPopup(popupId, event) {
+    event.preventDefault(); // Prevent the default behavior
+    document.getElementById(popupId + "Popup").style.display = "block";
+}
