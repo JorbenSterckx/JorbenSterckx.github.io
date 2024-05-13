@@ -45,22 +45,16 @@
       <div class="header_top">
         <div class="container-fluid">
           <div class="contact_link-container">
-            <a href="" class="contact_link1">
+            <a href="https://www.google.com/maps/place/Thomas+More+-+Campus+Geel/@51.160163,4.9581422,15.25z/data=!4m6!3m5!1s0x47c14c011b4bcb87:0xb5b970e9f2a6ce42!8m2!3d51.1609429!4d4.961399!16s%2Fg%2F1q5gn5kgc?entry=ttu" class="contact_link1" target="_blank">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
                 Kleinhoefstraat 4, 2440 Geel
               </span>
             </a>
-            <a href="" class="contact_link2">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                +32 123 45 67 89
-              </span>
-            </a>
-            <a href="" class="contact_link3">
+            <a href="mailto:sterckxjorben@hotmail.com" class="contact_link3">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                r0947807@student.thomasmore.be
+                sterckxjorben@hotmail.com
               </span>
             </a>
           </div>
@@ -79,9 +73,9 @@
             </button>
 
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-              <ul class="navbar-nav  ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href=""> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#over_mij"> Over mij</a>
@@ -193,7 +187,7 @@
         <div class="col-md-6 px-0">
           <div class="img_container">
             <div class="img-box">
-              <img src="images/student1.jpg" alt="" />
+              <img src="images/student1.jpg" alt="Jorben Sterckx" />
             </div>
           </div>
         </div>
@@ -219,8 +213,8 @@
                 een platform voor studenten waar ze hun pagina's op kunnen hosten.
               </p>
               <div class="btn-box">
-              <a href="images/CV-JorbenSterckx.pdf">
-              Curriculum Vitae
+              <a href="images/CV-JorbenSterckx.pdf" target="_blank">
+                Curriculum Vitae
               </a>
             </div>
           </div>
@@ -241,63 +235,94 @@
         </h2>
       </div>
       <div class="row">
+        <!-- Soft Skills -->
         <div class="col-md-4">
-          <div class="box ">
+          <div class="box">
             <div class="img-box">
               <i class="fa-solid fa-person"></i>
             </div>
             <div class="detail-box">
-              <h6>
-                Soft Skills
-              </h6>
+              <h6>Soft Skills</h6>
               <p>
-                Niet alleen ben ik sterker geworden door de kennis die ik heb opgedaan, maar ook
-                als persoon ben k gegroeid. Zo ben ik beter geworden in het samenwerken en het
-                communiceren met andere.
+                Niet alleen ben ik sterker geworden door de kennis die ik heb opgedaan, 
+                maar ook als persoon ben ik gegroeid. Zo ben ik beter geworden in het 
+                samenwerken en het communiceren met anderen.
               </p>
-              <a href="">
-                Lees Meer
-              </a>
+              <a href="#" onclick="showPopup('softSkills', event)">Lees Meer</a>
             </div>
           </div>
         </div>
+        <!-- Popup for Soft Skills -->
+        <div id="softSkillsPopup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="hidePopup('softSkills')">&times;</span>
+            <p>
+              Vroeger was ik een heel stille jongen. Maar in de voorbije 2 jaar ben ik hard
+              veranderd en ben ik veel actiever en mondiger geworden. Dit heb ik vooral
+              gemerkt bij groepsprojecten. Vroeger vond ik het moeilijker om mijn mening te zeggen
+              terwijl ik nu veel actiever ben en het makkelijker vind om te zeggen wat mijn mening is
+            </p>
+          </div>
+        </div>
+        <!-- Security -->
         <div class="col-md-4">
-          <div class="box ">
+          <div class="box">
             <div class="img-box">
               <i class="fa-solid fa-lock"></i>
             </div>
             <div class="detail-box">
-              <h6>
-                Security
-              </h6>
+              <h6>Security</h6>
               <p>
-                Als student in Cyber Security leer ik natuurlijk veel over hoe ik veilig op het internet zit.
-                Maar ook ben ik beter geworden in het vinden van kwetsbaarheden in systemen.
+                Als student in Cyber Security leer ik natuurlijk veel over hoe ik veilig 
+                op het internet zit. Maar ook ben ik beter geworden in het vinden van 
+                kwetsbaarheden in systemen.
               </p>
-              <a href="">
-                Lees Meer
-              </a>
+              <a href="#" onclick="showPopup('security', event)">Lees Meer</a>
             </div>
           </div>
         </div>
+        <!-- Popup for Security -->
+        <div id="securityPopup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="hidePopup('security')">&times;</span>
+            <p>
+              In de vakken zoals Application Security en Netwerk & OS Security heb ik gezien
+              hoe ik mezelf kan verdedigen tegen aanvallers en ook hoe ik zelf de aanvaller
+              kan zijn. Zo heb ik geleerd hoe ik met bepaalde tools kan werken zoals Burp Suit 
+              om kwetsbaarheden te vinden in applicaties. Maar ook tools voor encryptie
+              om gevoelige data veilig te houden.
+            </p>
+          </div>
+        </div>
+        <!-- Software -->
         <div class="col-md-4">
-          <div class="box ">
+          <div class="box">
             <div class="img-box">
               <i class="fa-solid fa-code"></i>
-              </svg>
             </div>
             <div class="detail-box">
-              <h6>
-                Software
-              </h6>
+              <h6>Software</h6>
               <p>
-                In 2 jaar tijd heb ik veel verschillende programmeer talen gezien. Hierdoor ben ik
-                meer flexibel geworden in het programmeren en ook het configureren van routers, switches, etc.
+                In 2 jaar tijd heb ik veel verschillende programmeertalen gezien. 
+                Hierdoor ben ik meer flexibel geworden in het programmeren en ook het 
+                configureren van routers, switches, etc.
               </p>
-              <a href="">
-                Lees Meer
-              </a>
+              <a href="#" onclick="showPopup('software', event)">Lees Meer</a>
             </div>
+          </div>
+        </div>
+        <!-- Popup for Software -->
+        <div id="softwarePopup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="hidePopup('software')">&times;</span>
+            <p>
+              In deze 2 jaren op school heb ik verschillende programmeertalen gezien zoals:
+              Python, Java, JavaScript, C++, HTML, CSS & PHP. Door het leren en gebruiken van
+              al deze verschillende programmeertalen ben ik flexibel geworden in het programmeren.
+              Buiten het programmeren heb ik ook geleerd hoe ik een toestel goed moet kunnen
+              configureren. Al gaat het nu over Cisco switches en routers of jupiner switches, dit
+              kan ik allemaal.
+            </p>
           </div>
         </div>
       </div>
@@ -313,7 +338,7 @@
     <div class="container ">
       <div class="heading_container heading_center">
         <h2>
-          Mijn projecten
+          Mijn Projecten
         </h2>
       </div>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -321,17 +346,24 @@
           <div class="carousel-item active">
             <div class="box">
               <div class="img-box">
-                <img src="images/" alt="">
+                <img src="images/verboden_zone.jpg" alt="GPS-Tracker">
               </div>
               <div class="detail-box">
                 <h4>
                   GPS Tracker
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip
+                  Voor het vak Systems Engineering & Analysis (SE&A) heb ik samen met 4 medestudenten
+                  een gps-tracker gemaakt. Onze klant kwam naar ons met de vraag of we
+                  een tracking systeem konden maken zodat ze kan kijken waar haar
+                  zoontje/dochter was als ze bijvoorbeeld naar een speeltuin gaan.
+                  <br>
+                  <br>
+                  Als resultaat van deze opdracht hebben we een armbandje gemaakt met een
+                  gps tracker in die het zoontje/dochter makkelijk kan aandoen. de locatie
+                  wordt gedeelt op onze zelfgemaakte website met een accurate lokatie die
+                  om de 3 seconde reset. We hebben ook een paar knoppen toegevoegd die onze
+                  klant kan indrukken op de pagina om haar zoontje/dochter op te roepen.
                 </p>
               </div>
             </div>
@@ -339,17 +371,21 @@
           <div class="carousel-item ">
             <div class="box">
               <div class="img-box">
-                <img src="images/ph.jpg" alt="">
+                <img src="images/ph.jpg" alt="Project Hosting">
               </div>
               <div class="detail-box">
                 <h4>
                   Hosting Platform
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip
+                  Voor het vak Project Hosting hebben ik en 4 medestudenten een hosting 
+                  platform gemaakt. We kregen de opdracht om een een platform te maken 
+                  waar de studenten van het derde jaar Application Development hun project 
+                  kunnen op hosten. Onze servers staan al volledig klaar in het serverrek
+                  en we moeten ons nu alleen nog op de software focussen. Hier gaan we
+                  verschillende tools voor gebruiken zoals: LDAP, API, SFTP & Auth0.
+                  Momenteel ben ik aan de webpagina aan het werken zodat onze klanten hun
+                  bestanden zonder problemen kunnen uplaoden.
                 </p>
               </div>
             </div>
@@ -357,17 +393,24 @@
           <div class="carousel-item ">
             <div class="box">
               <div class="img-box">
-                <img src="images/Muizenval.jpg" alt="">
+                <img src="images/Muizenval.jpg" alt="Muizenval">
               </div>
               <div class="detail-box">
                 <h4>
                   Muizenval
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip
+                  Vorig jaar heb ik voor het vak Internet of Things (IoT) een muizenval ontworpen.
+                  Het doel is simpel, ik moet een muis kunnen vangen. Dit heb ik gedaan aan de hand
+                  van verschillende componenten: OrangePi, stappenmotor, knop, LED, afstandssensor 
+                  & LCD. Wanneer er iets in mijn muizenval kwam pakte de afstandssensor dit op en
+                  ging de stappenmotor draaien waardoor het luik dicht valt.
+                  <br>
+                  <br>
+                  Natuurlijk wil ik alleen een muis vangen dus heb ik er Artificial intelligence (AI)
+                  in gestopt. Aan de hand van een camera en 100 afbeeldingen van muizen heb ik de AI laten
+                  trainen wanneer de camera een muis opneemt zal de AI dit herkennen en de het luik
+                  dichtvallen.
                 </p>
               </div>
             </div>
@@ -375,17 +418,21 @@
           <div class="carousel-item ">
             <div class="box">
               <div class="img-box">
-                <img src="images/Kubernetes.jpg" alt="">
+                <img src="images/Kubernetes.jpg" alt="Webstack in Kubernetes">
               </div>
               <div class="detail-box">
                 <h4>
                   Webstack on Kubernetes
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip
+                  Vorig semester heb ik voor het vak Linux Webservices een Webstack in Kubernetes
+                  gemaakt. Ik heb hier aan de hand van docker en kubernetes 2 containers aangemaakt.
+                  Een Apache2-container die een webpagina bedient en een MySQL-container die een 
+                  database host met één enkel record waarin mijn volledige naam staat. Deze containers 
+                  heb ik verbonden aan de hand van een API. In dit project haal ik mijn naam op de 
+                  Apache2-webserver uit de MySQL database op de andere container. Als ik mijn 
+                  naam in de database zou veranderen, update de webpage dit automatisch. Ook als ik 
+                  mijn containers verwijder en opnieuw op zet, gaat de data niet verloren.
                 </p>
               </div>
             </div>
@@ -411,7 +458,7 @@
   <section class="info_section ">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="info_logo">
             <a class="navbar-brand" href="index.html">
               <span>
@@ -419,53 +466,66 @@
               </span>
             </a>
             <p>
-              dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r
+              In dit portfolio vertel ik wie ik ben, wat ik heb bijgeleerd de voorbije 2 jaar en
+              wat ik allemaal gemaakt heb.
             </p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Handige Links
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="https://youtu.be/w4P22nfU33A" class="" target="_blank">
+              <i class="fa fa-video" aria-hidden="true"></i>
+              <span>
+                Video Webstack
+              </span>
+            </a>
+            <a href="https://youtu.be/8FcbjOlnJgQ" class="">
+              <i class="fa fa-video" aria-hidden="true"></i>
+              <span>
+                Video Muizenval
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
           <div class="info_info">
             <h5>
               Contact
             </h5>
           </div>
           <div class="info_contact">
-            <a href="" class="">
+            <a href="https://www.google.com/maps/place/Thomas+More+-+Campus+Geel/@51.160163,4.9581422,15.25z/data=!4m6!3m5!1s0x47c14c011b4bcb87:0xb5b970e9f2a6ce42!8m2!3d51.1609429!4d4.961399!16s%2Fg%2F1q5gn5kgc?entry=ttu" class="" target="_blank">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
                 Kleinhoefstraat 4, 2440 Geel
               </span>
             </a>
-            <a href="" class="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +32 123 45 67 89
-              </span>
-            </a>
-            <a href="" class="">
+            <a href="mailto:sterckxjorben@hotmail.com" class="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                r0947807@student.thomasmore.be
+                sterckxjorben@hotmail.com
               </span>
             </a>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="info_form ">
             <h5>
               Volg Mij
             </h5>
             <div class="social_box">
-              <a href="">
-                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-              </a>
-              <a href="">
+              <a href="https://twitter.com/JorbenSterckx" target="_blank">
                 <i class="fa-brands fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/jorben-sterckx-62235b253/" target="_blank">
                 <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
               </a>
-              <a href="">
+              <a href="https://github.com/JorbenSterckx" target="_blank">
                 <i class="fa-brands fa-github" aria-hidden="true"></i>
               </a>
             </div>
